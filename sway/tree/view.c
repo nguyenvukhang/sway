@@ -301,7 +301,7 @@ void view_autoconfigure(struct sway_view *view) {
 		list_t *siblings = container_get_siblings(con);
 		bool show_titlebar = (siblings && siblings->length > 1)
 			|| !config->hide_lone_tab;
-		if (show_titlebar) {
+		if (show_titlebar && false) {
 			enum sway_container_layout layout = container_parent_layout(con);
 			if (layout == L_TABBED) {
 				y_offset = container_titlebar_height();
