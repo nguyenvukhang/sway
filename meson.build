@@ -268,8 +268,6 @@ if get_option('default-wallpaper')
 	install_data(wallpaper_files, install_dir: wallpaper_install_dir)
 endif
 
-subdir('completions')
-
 summary({
 	'xwayland': have_xwayland,
 	'gdk-pixbuf': gdk_pixbuf.found(),
